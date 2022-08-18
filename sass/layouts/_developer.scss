@@ -1,0 +1,38 @@
+
+.developer-list__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 113px;
+    position: absolute;
+    max-width: 370px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    text-justify: none;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .developer-list__item:hover .developer-list__text {
+    opacity: 1;
+  }
+  .developer-list__item:focus .developer-list__text {
+    opacity: 1;
+  }
+  
+  .developer-list__item {
+    position: relative;
+  }
+  .developer-list {
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+    width: calc((100% - 60px) / 3);
+    margin-top: 50px;
+  }
