@@ -1,8 +1,4 @@
-.header > .container {
-    display: flex;
-    align-items: center;
-  }
-  .header {
+ .header {
     background: #ffffff;
   
     position: fixed;
@@ -10,6 +6,10 @@
     top: 0;
     left: 0;
     z-index: 2;
+    > .container {
+      display: flex;
+      align-items: center;
+    }
   }
   
   .navigation__list {
@@ -46,18 +46,16 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus  {
+      color: var(--basic-color);
+    }
   }
   
   .navigation__link:not:last-child {
     margin-right: 50px;
   }
   
-  .navigation__link:hover {
-    color: var(--basic-color);
-  }
-  .navigation__:focus {
-    color: var(--basic-color);
-  }
+
   .contacts {
     margin-left: auto;
   }
@@ -83,13 +81,13 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--basic-color);
+      fill: var(--basic-color);
+    }
   }
-  .contacts__item:hover,
-  .contacts__item:focus {
-    color: var(--basic-color);
-    fill: var(--basic-color);
-  }
-  
+
   .adress-icon {
     margin-right: 10px;
   }

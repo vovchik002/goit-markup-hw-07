@@ -16,10 +16,9 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .client-logo__link:hover,
-  .client-logo__link:focus {
-    fill: #2196f3;
-    border: 1px solid #2196f3;
+    &:hover,
+    &:focus {
+      fill: #2196f3;
+      border: 1px solid #2196f3;
+    }
   }

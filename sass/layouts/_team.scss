@@ -15,11 +15,10 @@
     display: flex;
     gap: 30px;
     padding-left: 0;
-  }
-  .team-list {
     width: calc((100% - 90px) / 4);
     margin-top: 50px;
   }
+
   .team-header {
     font-weight: 700;
     font-size: 36px;
@@ -64,11 +63,12 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+      fill: #ffffff;
+    }
   }
   
-  .soc__link:hover,
-  .soc__link:focus {
-    background-color: #2196f3;
-    fill: #ffffff;
-  }
+
   

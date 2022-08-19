@@ -40,10 +40,11 @@
     background-color: #ffffff;
     align-items: center;
     justify-content: center;
+    &:hover, &:focus {
+      fill:var(--basic-color)}
   
   }
-  .close-modal:hover {
-    fill:var(--basic-color)}
+  
   .modal-par {
     font-weight: 700;
     font-size: 20px;
@@ -69,12 +70,16 @@
     padding-left: 30px;
     outline: transparent;
     transition: border-color 300ms;
+    &:focus {
+      border-color: #2196f3;
+    }
   }
   
   .modal-field {
     margin-top: 10px;
+    &:first-child {margin-top: 12px;}
   }
-  .modal-field:first-child {margin-top: 12px;}
+  
   .input-wrap {
     position: relative;
     margin-top: px;
@@ -86,9 +91,7 @@
     transform: translateY(-50%);
     transition: fill 300ms;
   }
-  .modal-input:focus {
-    border-color: #2196f3;
-  }
+  
   .modal-input:focus + .input-icon {
     fill: var(--basic-color);
   }
