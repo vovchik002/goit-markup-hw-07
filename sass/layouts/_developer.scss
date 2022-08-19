@@ -7,23 +7,16 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: rgba(47, 48, 58, 0.8);
-    padding: 27px 113px;
     position: absolute;
-    max-width: 370px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
     bottom: 0;
     left: 0;
     text-align: center;
-    text-justify: none;
-    opacity: 0;
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .developer-list__item:hover .developer-list__text {
-    opacity: 1;
-  }
-  .developer-list__item:focus .developer-list__text {
-    opacity: 1;
   }
   
   .developer-list__item {
