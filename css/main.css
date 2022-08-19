@@ -609,7 +609,7 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.list-example {
+.card__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -619,23 +619,23 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-example-item:hover {
+.card:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.list-example-item:focus {
+.card:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.list-example-item:hover .wrapper-text {
+.card:hover .card__wrapper-text {
   transform: translateY(0%);
 }
 
-.list-example-item:focus .wrapper-text {
+.card:focus .card__wrapper-text {
   transform: translateY(0%);
 }
 
-.border-paragraph {
+.caption {
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -643,7 +643,7 @@ footer {
   border: 1px solid #eeeeee;
 }
 
-.example-heading {
+.caption__heading {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -651,19 +651,19 @@ footer {
   margin-bottom: 4px;
 }
 
-.example-paragraph {
+.caption__paragraph {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--color-paragraph);
 }
 
-.wrapper-list-example {
+.card__wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.wrapper-text {
+.card__wrapper-text {
   position: absolute;
   top: 0;
   left: 0;
