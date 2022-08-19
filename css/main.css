@@ -206,7 +206,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-paragraph);
   fill: var(--color-paragraph);
-  margin-left: 50px;
+  margin-left: 15px;
   align-items: center;
   display: flex;
   transition-property: color, fill;
@@ -278,7 +278,6 @@ body {
   border: 50%;
   background-color: #f5f4fa;
   display: flex;
-  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
 }
