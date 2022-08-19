@@ -1,4 +1,9 @@
- .header {
+.header > .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header {
     background: #ffffff;
   
     position: fixed;
@@ -6,10 +11,6 @@
     top: 0;
     left: 0;
     z-index: 2;
-    > .container {
-      display: flex;
-      align-items: center;
-    }
   }
   
   .navigation__list {
@@ -46,48 +47,55 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus  {
+
+    &:not:last-child {
+      margin-right: 50px;
+    }
+
+    &:hover, &:focus {
       color: var(--basic-color);
     }
   }
   
-  .navigation__link:not:last-child {
-    margin-right: 50px;
-  }
+  
   
 
   .contacts {
     margin-left: auto;
-  }
-  .contacts__adress {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--color-paragraph);
-    display: flex;
-  }
+
+  &__adress {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+      letter-spacing: 0.02em;
+      color: var(--color-paragraph);
+      display: flex;
+    }
+    
+  &__item {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+      letter-spacing: 0.02em;
+      color: var(--color-paragraph);
+      fill: var(--color-paragraph);
+      margin-left: 15px;
+      align-items: center;
+      display: flex;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-  .contacts__item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--color-paragraph);
-    fill: var(--color-paragraph);
-    margin-left: 15px;
-    align-items: center;
-    display: flex;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+      &:hover,
+      &:focus {
       color: var(--basic-color);
       fill: var(--basic-color);
     }
+    }
+    
   }
-
+  
+  
   .adress-icon {
     margin-right: 10px;
   }
